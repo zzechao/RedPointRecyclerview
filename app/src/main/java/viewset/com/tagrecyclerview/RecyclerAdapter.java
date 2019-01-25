@@ -1,4 +1,4 @@
-package viewset.com.redpointrecyclerview;
+package viewset.com.tagrecyclerview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,11 +9,12 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
 import viewset.com.R;
 
 import static android.support.v7.widget.RecyclerView.Adapter;
-import static android.support.v7.widget.RecyclerView.OnClickListener;
 import static android.support.v7.widget.RecyclerView.ViewHolder;
+import static android.view.View.OnClickListener;
 
 public class RecyclerAdapter extends Adapter<ViewHolder> {
 
@@ -53,11 +54,6 @@ public class RecyclerAdapter extends Adapter<ViewHolder> {
         } else if (holder instanceof NormalHolder) {
             NormalHolder normalHolder = (NormalHolder) holder;
             normalHolder.mTV.setText(mDatas.get(position) + "大叔大叔大叔的大叔大叔大叔的蔷薇蔷薇");
-            if (position % 2 != 0) {
-                normalHolder.qqpoint.setVisibility(View.GONE);
-            } else {
-                normalHolder.qqpoint.setVisibility(View.VISIBLE);
-            }
         }
     }
 
@@ -68,9 +64,6 @@ public class RecyclerAdapter extends Adapter<ViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
-        if (position % M_SECTION_ITEM_NUM == 0) {
-            return ITEM_TYPE.ITEM_TYPE_SECTION.ordinal();
-        }
         return ITEM_TYPE.ITEM_TYPE_ITEM.ordinal();
     }
 

@@ -24,6 +24,8 @@ import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 
+import viewset.com.R;
+
 /**
  * QQ红点功能+recyclerview
  */
