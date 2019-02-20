@@ -25,5 +25,9 @@
         <activity
             android:name=".tagrecyclerview.TagActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".imagerecyclerview.LayoutManagerImageActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
