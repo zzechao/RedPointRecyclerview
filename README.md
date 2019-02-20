@@ -9,4 +9,4 @@ TagRecyclerView的实现<br/>
 
 ImageRecyclerView的实现<br/>
 效果图<br/>
-![image](https://github.com/zzechao/RedPointRecyclerview/blob/master/game.2019-02-20 15_48_11.gif)
+![image](https://github.com/zzechao/RedPointRecyclerview/blob/master/game.2019-02-20-15_48_11.gif)
