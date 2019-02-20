@@ -28,6 +28,6 @@
 
         <activity
             android:name=".imagerecyclerview.LayoutManagerImageActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="sensor" />
     </application>
 </manifest>

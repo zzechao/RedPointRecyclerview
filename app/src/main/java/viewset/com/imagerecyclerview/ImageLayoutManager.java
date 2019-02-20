@@ -134,7 +134,7 @@ public class ImageLayoutManager extends RecyclerView.LayoutManager {
             //计算测量布局的宽高
             mDecoratedChildWidth = getDecoratedMeasuredWidth(scrap);
             mDecoratedChildHeight = getDecoratedMeasuredHeight(scrap);
-            mStartX = Math.round((getHorizontalSpace() - mDecoratedChildWidth) * 1.0f / 2);
+            mStartX = Math.round((getHorizontalSpace() - mDecoratedChildWidth) * 1.0f / 2) - 100;
             mStartY = Math.round((getVerticalSpace() - mDecoratedChildHeight) * 1.0f / 2);
         }
 
@@ -393,8 +393,7 @@ public class ImageLayoutManager extends RecyclerView.LayoutManager {
      * 获取中线位置
      */
     private int getScreenCenterOffset() {
-        Rect rect = getVisibleArea();
-        return rect.left + getWidth() / 2;
+        return (int) (mOffsetAll + mStartX + getIntervalDistance());
     }
 
     /**
